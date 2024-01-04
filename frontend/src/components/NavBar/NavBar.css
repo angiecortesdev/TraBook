@@ -1,0 +1,70 @@
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: #626262;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.nav-menu hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: #FA7436;
+}
+
+.nav-login-signUp{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* Botones de la barra de navegación */
+
+.nav-login-signUp button{
+    width: 157px;
+    height: 45px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    background: white;
+    border: none;
+}
+
+.nav-login-signUp button, .login{
+    background: #5a36fa;
+    cursor: pointer;
+ 
+    color: #FA7436;
+}
+
+
+.nav-login-signUp button, .register{
+    background: #FA7436;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
