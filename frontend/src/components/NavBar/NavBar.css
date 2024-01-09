@@ -25,13 +25,7 @@
     cursor: pointer;
 }
 
-.nav-menu hr {
-    border: none;
-    width: 80%;
-    height: 3px;
-    border-radius: 10px;
-    background: #FA7436;
-}
+
 
 .nav-login-signUp{
     display: flex;
@@ -52,15 +46,13 @@
     border: none;
 }
 
-.nav-login-signUp button, .login{
-    background: #5a36fa;
+.nav-login-signUp button.login{
     cursor: pointer;
- 
     color: #FA7436;
 }
 
 
-.nav-login-signUp button, .register{
+.nav-login-signUp button.register{
     background: #FA7436;
     cursor: pointer;
     border: none;
