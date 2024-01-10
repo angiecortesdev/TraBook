@@ -1,7 +1,9 @@
-import './Hero.css';
 import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import tourist from'../assets/tourist.png'
+import './Hero.css';
+
 const Hero = () => {
 	return (
 		<Container>
@@ -9,20 +11,20 @@ const Hero = () => {
 				<Col>
 					<div className="hero">
 						<div className="hero-left">
-							<h2>Get started your exciting journey with us.</h2>
-						</div>
-						<div>
+							<h2>Get started your exciting <span>journey</span>  with us.</h2>
 							<p>
-								A Team of experienced tourism professionals will provide you with the best advice and tips for your
-								desire place.
+								A Team of experienced tourism professionals will provide you with the best advice and
+								tips for your desire place.
 							</p>
 						</div>
 						{/* Boton */}
 						<div className="hero-lastest-btn">
-
+							<div> Discover Now</div>
 						</div>
-						<div className="hero-right" />
-					</div>
+						<div className="hero-right">
+						<img style={{ width: '600px' }} src={ tourist } alt='Tourist'/>
+						</div>
+					</div> 
 				</Col>
 			</Row>
 		</Container>
