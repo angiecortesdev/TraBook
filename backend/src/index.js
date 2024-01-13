@@ -1,37 +1,22 @@
-const express = require('express') ;
-const morgan = require('morgan');
-const exphbs = require('express-handlebars')
+import express from 'express';
+import { PORT } from './config.js'
+import america from 'colors'
+import usersRoutes  from './routes/user.routes.js'
+import indexRoutes from './routes/index.routes.js'
+import morgan from 'morgan'
 
+const app = express()
 
+app.use(express.json())
 
-require('dotenv').config();
-require ('colors')
+app.use(morgan('dev'));
 
-//Initialization
-const app = express();
+app.use(usersRoutes)
+app.use(indexRoutes)
 
-
-//Settings
-app.set('port', process.env.PORT || 4120);
-app.engine('.hbs',exphbs({
-    extname: '.hbs'
-}));
-
-
+app.listen(PORT)
+console.log(`Server on port ${PORT}`.america);
 
 
 
 
-//Middlewares
-app.use(morgan('dev')); //Logs every request to the console in a pretty
-
-//Global Variables
-
-//Routes
-app.use(require('./routes/index.js'));
-
-
-// Starting the server
-app.listen(app.get('port'), () => {
-    console.log('Server is running on port'.rainbow, app.get('port').rainbow)
-}) 
