@@ -1,33 +1,23 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 import tourist from'../assets/tourist.png'
-import './Hero.css';
+import '../../index.css';
 
 const Hero = () => {
 	return (
-		<Container>
-			<Row>
-				<Col>
-					<div className="hero">
-						<div className="hero-left">
-							<h2>Get started your exciting <span>journey</span>  with us.</h2>
-							<p>
-								A Team of experienced tourism professionals will provide you with the best advice and
-								tips for your desire place.
-							</p>
-						</div>
-						{/* Boton */}
-						<div className="hero-lastest-btn">
-							<div> Discover Now</div>
-						</div>
-						<div className="hero-right">
-						<img style={{ width: '600px' }} src={ tourist } alt='Tourist'/>
-						</div>
-					</div> 
-				</Col>
-			</Row>
-		</Container>
+		<div className="hero">
+			<div className="hero-left">
+				<h2>Get started your exciting <span>journey</span><br />with us.</h2>
+				<p>
+					A Team of experienced tourism professionals will<br /> provide you with the best advice and
+					tips for your<br /> desire place.
+				</p>
+				<Button className='hero-lastest-btn' style={{ background: 'white', border: '1px solid #FA7436', color: '#FA7436' }}>Discover Now</Button>
+			</div>
+
+			<div className="hero-right">
+				<img className='mt-5 py-5' style={{ width: '500px' }} src={ tourist } alt='Tourist'/>
+			</div>
+		</div> 
 	);
 };
 

@@ -1,13 +1,84 @@
 *{
+    margin: 0;
     text-decoration: none;
 }
 
 body {
-    margin: 0;
-    font-family: 'poppins';
+    font-family: 'roboto';
     text-decoration: none;
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier new' monospace;
+}
+
+
+/* Página principal */
+
+.hero{
+    height: 100vh;
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+.hero-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding-left: 100px;
+    line-height: 1.1;
+    margin-top: -225px;
+    
+}
+
+.hero-left h2{
+    color: #090909;
+    font-weight: 700;
+    font-size: 42px;
+}
+
+
+.hero-left h2 span{
+    color: #FA7436;
+}
+
+.hero-left p {
+    color: #797979;
+    font-size: 15px;
+}
+
+.hero-lastest-btn{
+    width: 150px;
+    border-radius: 5px;
+}
+
+.hero-lastest-btn:hover{
+    color: white;
+    background-color: #FA7436;
+}
+
+.hero-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-top: -170px;
+}
+
+
+/* Footer */
+
+
+
+h6{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-content p{
+    width: 190px;
+    margin: auto;
+    padding: 7px;
 }
